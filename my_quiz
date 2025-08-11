@@ -1,6 +1,6 @@
 import emoji
 print("Welcome To Computer Quiz")
-print("Max Marks:100")
+print("Max Marks:16")
 print("Every Question Have Equal Marks")
 name=(input("Enter Your Name:"))
 rollno=input("Enter Your Roll NO.")
@@ -9,30 +9,36 @@ print("The full form of CPU:")
 option=int(input("1)Dots \n2)Central program unit \n3)central processing unit \n4)computer program unit\n"))
 if(option == 3):
     print(emoji.emojize("correct! :boom:",language='alias'))
-    score+=1
+    score+=4
 else:
     print(emoji.emojize("incorrect :pensive:",language='alias'))
 print("What is the complete form of E-Mitra?")
 option=int(input("1)Employer Mitra\n2)Emergency Mitra\n3)Electronic Mitra \n4)None Of The Above\n"))
 if(option == 3):
    print(emoji.emojize("correct! :boom:",language='alias'))
-   score+=1
+   score+=4
 else:
     print(emoji.emojize("incorrect :pensive:",language='alias'))
 print("What does the comment give for a cell entry to show on the screen?")
 option=int(input("1)Comment \n2)Indicator \n3)Picture \n4)None of these\n"))
 if(option == 1):
    print(emoji.emojize("correct! :boom:",language='alias'))
-   score+=1
+   score+=4
 else:
     print(emoji.emojize("incorrect :pensive:",language='alias'))
 print("How is the resolution of the screen shown?")
 option=int(input("1)Dots \n2)Colors \n3)Pixels per inch \n4)Dot per inch\n"))
 if(option == 3):
     print(emoji.emojize("correct! :boom:",language='alias'))
-    score+=1
+    score+=4
 else:
     print(emoji.emojize("incorrect :pensive:",language='alias'))
 print(emoji.emojize(f"Total Correct Ans. is {score}:wink:",language='alias'))
-per=(score/4)*100
+per=(score/16)*100
 print(emoji.emojize(f"Your Percentage is:{per}% :tada:",language='alias'))
+if per == 100:
+    print("Perfect Score! 🔥")
+elif per >= 75:
+    print("Great job! 👍")
+else:
+    print("Keep practicing! 💪")
